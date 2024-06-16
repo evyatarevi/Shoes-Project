@@ -7,5 +7,6 @@ import ShoesGallery from './pages/ShoesGallery/ShoesGallery.jsx'
 import NotFound from './pages/NotFound/NotFound.jsx'
 // components
 import Nav from './components/Nav/Nav.jsx'
+import ShoeCard from './components/ShoeCard/ShoeCard.jsx'
 
-export { MainLayout, Home, EditShoe, AddShoe, ShoesGallery, NotFound, Nav };
+export { MainLayout, Home, EditShoe, AddShoe, ShoesGallery, NotFound, Nav, ShoeCard };
