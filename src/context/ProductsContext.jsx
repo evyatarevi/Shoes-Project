@@ -10,8 +10,8 @@ const ProductsContextProvider = ({ children }) => {
   useEffect(() => {
     const getProducts = async () => {
       try {
-        const response = await fetchProducts();
-        setProducts(response.data);
+        const products = await fetchProducts();
+        setProducts(products);
       } catch (error) {
         console.log(error);
       }

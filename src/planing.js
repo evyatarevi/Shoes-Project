@@ -35,7 +35,7 @@
 //         state: context products
 //         return:
 //                 section:
-//                         products.map(product -> Card)
+//                         products.map(product -> Card) | pass ro Card: img, price, id.
 
 // Card:
 //     func:
@@ -49,7 +49,7 @@
 // EditShoe:
 //         state:
 //                 img: img
-//                 label: label
+//                 price: price
 //         func: 
 //             useParam: {id} -> {img, label} = find(id) -> 
 

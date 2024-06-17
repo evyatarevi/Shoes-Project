@@ -7,8 +7,8 @@ const ShoeCard = ({ id, img, price }) => {
     <div className="card">
       <img src={img} alt="shoe-image" className="card-img" />
       <p className="card-price">{price}$</p>
-      <Link to={`/shoes/:${id}`} className="card-link">
-        Click Me
+      <Link to={`/shoes/${id}`} className="card-link">
+        Manage
       </Link>
     </div>
   );
