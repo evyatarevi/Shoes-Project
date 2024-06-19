@@ -12,6 +12,15 @@ const fetchProducts = async () => {
     }
 }
 
+const createProduct = async (product) => {
+    try {
+        const response = await axios.post(URL, product);
+        return response.data;
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
 const updateProduct = async (id, details) => {
     try {
         const response = await axios.put(`${URL}/${id}`, details);
@@ -21,4 +30,12 @@ const updateProduct = async (id, details) => {
     }
 }
 
-export { fetchProducts, updateProduct };
+const deleteProduct = async (id) => {
+    try {
+        return await axios.delete(`${URL}/${id}`)
+    } catch (error) {
+        throw new Error(error);
+    }
+}
+
+export { fetchProducts, updateProduct, deleteProduct, createProduct };

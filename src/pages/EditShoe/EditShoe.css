@@ -54,3 +54,12 @@
 .form-button:hover {
   background-color: #0056b3;
 }
+
+.delete {
+  background-color: rgb(230, 0, 0);
+  margin-top: 5px;
+}
+
+.delete:hover {
+  background-color: rgb(193, 1, 1);
+}

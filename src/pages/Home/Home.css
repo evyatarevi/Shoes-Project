@@ -1,0 +1,35 @@
+/* Background Image Section */
+.home-section {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/027/686/714/non_2x/a-person-in-running-shoes-on-the-background-of-an-electronic-signal-free-photo.jpg");
+  background-size: cover; /* Ensure the image covers the entire screen */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  width: 100%;
+  height: 95vh; /* Full viewport height */
+  overflow: hidden; /* Hide overflow to prevent scrolling */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Button Container */
+.button-container {
+  text-align: center;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}

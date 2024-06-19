@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { updateProduct } from "../../api/api.js";
+import { updateProduct, deleteProduct } from "../../api/api.js";
 import useProductsContext from "../../hooks/useProductsContext";
 import "./EditShoe.css";
 
@@ -29,6 +29,7 @@ const EditShoe = () => {
   };
 
   const handleForm = async (event) => {
+    console.log("delete occur");
     event.preventDefault();
     try {
       await updateProduct(id, {
@@ -43,6 +44,16 @@ const EditShoe = () => {
           return product;
         })
       );
+      navigate("/shoes");
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  const removeProduct = async () => {
+    try {
+      await deleteProduct(id);
+      setProducts(products.filter((product) => product.id !== id));
       navigate("/shoes");
     } catch (error) {
       console.log(error);
@@ -74,6 +85,13 @@ const EditShoe = () => {
           />
           <button type="submit" className="form-button">
             Update
+          </button>
+          <button
+            type="button"
+            className="form-button delete"
+            onClick={removeProduct}
+          >
+            Delete
           </button>
         </form>
       </section>
