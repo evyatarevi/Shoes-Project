@@ -8,5 +8,6 @@ import NotFound from './pages/NotFound/NotFound.jsx'
 // components
 import Nav from './components/Nav/Nav.jsx'
 import ShoeCard from './components/ShoeCard/ShoeCard.jsx'
+import Form from './components/Form/Form.jsx';
 
-export { MainLayout, Home, EditShoe, AddShoe, ShoesGallery, NotFound, Nav, ShoeCard };
+export { MainLayout, Home, EditShoe, AddShoe, ShoesGallery, NotFound, Nav, ShoeCard, Form };
